@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ATA Scanner Pro — Hard Drive Diagnostics</title>
+  <meta name="description" content="ATA Scanner Pro is a Windows disk diagnostic tool for parallel sector scanning, S.M.A.R.T. health reports, head testing, remapping and raw ATA scripts.">
+  <meta name="theme-color" content="#0b1020">
+  <link rel="icon" href="icon.ico">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="ATA Scanner Pro home">
+        <span class="brand-mark"><img src="icon.ico" alt=""></span>
+        <span class="brand-name">Scanner <strong>Pro</strong></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="primary-menu">
+        <a href="#features">Features</a>
+        <a href="#docs">Documentation</a>
+        <a href="#pricing">Price</a>
+        <a href="#support">Support</a>
+        <a href="#download">Download</a>
+      </div>
+
+      <a class="btn btn-sm nav-cta" href="https://www.mediafire.com/file/7qnrmoababfssj8/ATAScannerPro.rar/file" data-download="x64">
+        Download
+      </a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="badge">Version 1.2 · Windows</span>
+          <h1>Know your drives<br><span>before they fail.</span></h1>
+          <p class="lead">
+            ATA Scanner Pro scans hard disks sector by sector, shows latency maps,
+            reports S.M.A.R.T. health, tests individual heads and gives advanced users
+            direct ATA task-file access — all in one Windows application.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://www.mediafire.com/file/7qnrmoababfssj8/ATAScannerPro.rar/file" data-download="x64">
+              Download 64-bit
+            </a>
+            <a class="btn btn-secondary" href="https://www.mediafire.com/file/wd9tr981f5l31y2/ATAScannerPro_x86.rar/file" data-download="x86">
+              32-bit version
+            </a>
+          </div>
+
+          <div class="price-line">
+            <span class="price-tag">$150</span>
+            <span>one-time license · 150$</span>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="App summary">
+          <div class="hero-card-head">
+            <span class="dot"></span>
+            <span>At a glance</span>
+          </div>
+          <dl class="spec-list">
+            <div><dt>Platform</dt><dd>Windows</dd></div>
+            <div><dt>Privilege</dt><dd>Administrator</dd></div>
+            <div><dt>Scanning</dt><dd>Multiple drives in parallel</dd></div>
+            <div><dt>I/O modes</dt><dd>API (DMA) / PIO pass-through</dd></div>
+            <div><dt>Health</dt><dd>S.M.A.R.T. + per-head reports</dd></div>
+            <div><dt>License</dt><dd>$150 one-time</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">What it does</span>
+          <h2>Built for real drive diagnostics</h2>
+          <p>Whether you are checking a suspicious disk, recovering data or testing heads, ATA Scanner Pro keeps every drive in its own workspace.</p>
+        </div>
+
+        <div class="grid features">
+          <article class="card">
+            <div class="icon">▦</div>
+            <h3>Parallel scan slots</h3>
+            <p>Select several physical drives and scan them at the same time. Switch between maps, statistics and graphs with the scan list.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">◉</div>
+            <h3>Sector latency map</h3>
+            <p>Each block is coloured by read/write time so slow or unstable areas are easy to spot at a glance.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">♥</div>
+            <h3>S.M.A.R.T. viewer</h3>
+            <p>Attributes, current/worst/threshold values, raw data, temperature, power-on hours, firmware and a clear health verdict.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">⌁</div>
+            <h3>Per-head testing</h3>
+            <p>Read-only “Test head” mode samples each reported head separately and labels results H0, H1, and so on.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">↻</div>
+            <h3>Remap support</h3>
+            <p>Rewrites unreadable sectors so the drive firmware can reallocate them. Use carefully and only on drives you own.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">⌘</div>
+            <h3>ATA Script runner</h3>
+            <p>Parse-only dry run, then send raw ATA task-file registers through SMART IOCTL or ATA pass-through with full logging.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOCUMENTATION -->
+    <section class="section section-alt" id="docs">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Documentation</span>
+          <h2>Getting started</h2>
+          <p>Short guide for first-time users.</p>
+        </div>
+
+        <div class="docs-grid">
+          <article class="doc-card">
+            <span class="step">01</span>
+            <h3>Requirements</h3>
+            <ul>
+              <li>Windows PC</li>
+              <li>Run the EXE as <strong>Administrator</strong></li>
+              <li>Directly attached SATA/ATA disk for low-level commands</li>
+              <li>Disk images can also be opened for scanning</li>
+            </ul>
+          </article>
+
+          <article class="doc-card">
+            <span class="step">02</span>
+            <h3>Choose drives</h3>
+            <p>Use <strong>Select all</strong>, pick individual disks, refresh the list or open a disk image. Then press <strong>Start scans</strong>.</p>
+            <p>You can add more scans while others are already running.</p>
+          </article>
+
+          <article class="doc-card">
+            <span class="step">03</span>
+            <h3>Pick a scan mode</h3>
+            <ul>
+              <li><strong>Read (verify)</strong> — non-destructive surface test</li>
+              <li><strong>Write (test pattern)</strong> — destructive</li>
+              <li><strong>Erase (zeros)</strong> — destructive</li>
+              <li><strong>Test head</strong> — read-only per-head sampling</li>
+            </ul>
+          </article>
+
+          <article class="doc-card">
+            <span class="step">04</span>
+            <h3>I/O selector</h3>
+            <p><strong>API (DMA)</strong> is the standard Windows path. <strong>PIO (ATA pass-through)</strong> sends task-file commands through the Windows storage driver.</p>
+            <p>USB/RAID controllers often block raw ATA registers.</p>
+          </article>
+
+          <article class="doc-card">
+            <span class="step">05</span>
+            <h3>Review results</h3>
+            <p>Use the scan list arrows to move between drives. Save a report for the current drive when finished.</p>
+          </article>
+
+          <article class="doc-card">
+            <span class="step">06</span>
+            <h3>Advanced tools</h3>
+            <p><strong>S.M.A.R.T.</strong> opens health details. <strong>ATA Script...</strong> lets advanced users run parsed register scripts.</p>
+            <p class="warn">Raw ATA commands can destroy data or brick a drive. Use only if you understand the command bytes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section" id="pricing">
+      <div class="container price-wrap">
+        <div class="section-head left">
+          <span class="eyebrow">Pricing</span>
+          <h2>One license. One payment.</h2>
+          <p>No subscription. Contact support to purchase and receive your license.</p>
+        </div>
+
+        <div class="price-card">
+          <div class="price-card-top">
+            <span>ATA Scanner Pro</span>
+            <span class="price-big">$150</span>
+          </div>
+          <p class="price-sub">One-time license · 150$</p>
+          <ul class="check-list">
+            <li>All scanning modes</li>
+            <li>Parallel multi-drive workspace</li>
+            <li>S.M.A.R.T. viewer and per-head tests</li>
+            <li>ATA Script runner with dry-run preview</li>
+            <li>Support from IT Nation Company</li>
+          </ul>
+          <a class="btn btn-whatsapp full"
+             href="https://wa.me/201020088298?text=Hello%2C%20I%20want%20to%20purchase%20ATA%20Scanner%20Pro%20for%20%24150."
+             target="_blank" rel="noopener">
+            Order / Pay on WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUPPORT -->
+    <section class="section section-alt" id="support">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Support</span>
+          <h2>Need help?</h2>
+          <p>Contact the team below for licensing, installation and technical support.</p>
+        </div>
+
+        <div class="grid support-grid">
+          <article class="card support-card">
+            <span class="label">Support company</span>
+            <h3>IT Nation Company</h3>
+            <p>Official support and licensing contact for ATA Scanner Pro.</p>
+          </article>
+
+          <article class="card support-card">
+            <span class="label">Contact number</span>
+            <h3><a href="tel:+201020088298">+20 102 008 8298</a></h3>
+            <p class="mono">201020088298</p>
+            <button class="copy-btn" type="button" data-copy="201020088298">Copy number</button>
+            <a class="whatsapp-link"
+               href="https://wa.me/201020088298?text=Hello%2C%20I%20need%20support%20for%20ATA%20Scanner%20Pro."
+               target="_blank" rel="noopener">Chat on WhatsApp</a>
+          </article>
+
+          <article class="card support-card">
+            <span class="label">Developer</span>
+            <h3>Eng. Mohamed Hamd</h3>
+            <p>Application developer and maintainer.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOWNLOAD -->
+    <section class="section download" id="download">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Download</span>
+          <h2>Get ATA Scanner Pro</h2>
+          <p>Choose the build that matches your Windows installation.</p>
+        </div>
+
+        <div class="grid download-grid">
+          <article class="card download-card">
+            <h3>64-bit Edition</h3>
+            <p class="file">ATAScannerPro.exe</p>
+            <p>Recommended for most modern Windows PCs.</p>
+            <a class="btn btn-primary full" href="https://www.mediafire.com/file/7qnrmoababfssj8/ATAScannerPro.rar/file" data-download="x64">Download x64</a>
+          </article>
+
+          <article class="card download-card">
+            <h3>32-bit Edition</h3>
+            <p class="file">ATAScannerPro_x86.exe</p>
+            <p>For 32-bit Windows systems or older hardware.</p>
+            <a class="btn btn-secondary full" href="https://www.mediafire.com/file/wd9tr981f5l31y2/ATAScannerPro_x86.rar/file" data-download="x86">Download x86</a>
+          </article>
+        </div>
+
+        <p class="download-notice" id="download-notice" hidden>
+          Download link will be added soon. Please contact support if you need the installer now.
+        </p>
+        <p class="note">After downloading, right-click the file and choose <strong>Run as administrator</strong>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>&copy; <span id="year">2026</span> IT Nation Company. All rights reserved.</span>
+      <span>Developed by <strong>Eng. Mohamed Hamd</strong>.</span>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
